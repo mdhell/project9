@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Monk's Cafe</title>
+		<script src="https://use.fontawesome.com/95510f61fa.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+	</head>
+	<body>
+	<div id="container">
+		<div id="nav-bar">
+		<ul>
+			<li>
+				<a href="#reservations">Reservations</a>
+			</li>
+			<li>
+				<a href="#map">Come Dine With Us</a>
+			</li>
+			<li>
+				<a href="#reviews">Reviews</a>
+			</li>
+		</ul>
+		</div>
+
+		<div id="heading">
+		<h1>Monk's Cafe</h1>
+		<h3>"The Coffee Shop"</h3>
+		</div>
+
+		<div id="main">
+			
+		</div>
+
+		<div id="reservation-title"><h2>Reservations</h2></div>
+		
+		<div id="reservations">
+			
+		
+			<div id="make-reservation">
+				<h2>Make a reservation</h2>	
+				<form id="reservation-form" onsubmit="return false">
+					<input type="text" name="name" placeholder="Name" id="name"></br>
+					
+					</br>
+					<select id="mySelect">
+					  <option value="Monday">Monday</option>
+					  <option value="Tuesday">Tuesday</option>
+					  <option value="Wednesday">Wednesday</option>
+					  <option value="Thursday">Thursday</option>
+					  <option value="Friday">Friday</option>
+					  <option value="Saturday">Saturday</option>
+					  <option value="Sunday">Sunday</option>
+					</select>
+					<button type="submit" onclick="checkForm()">Confirm</button>
+
+				</form>
+					<div id="error-name"></div>
+			</div>
+		
+
+			<div id="existing-reservations">
+				<h3>Existing Reservations</h3>
+				 <div id="name-day">
+					<table>
+					<thead>
+						<th>Name</th>
+						<th>Day</th>
+					</thead>
+						<tbody> 
+							<tr>
+								<td>Michael</td>
+								<td>Monday</td>
+							</tr>							
+							<tr>
+								<td>Regina</td>
+								<td>Monday</td>
+							</tr>
+							<tr>
+								<td>Dylan</td>
+								<td>Tuesday</td>
+							</tr>
+							<tr>
+								<td>Erich</td>
+								<td>Tuesday</td>
+							</tr>
+							<tr>
+								<td>Justin</td>
+								<td>Tuesday</td>
+							</tr>
+						</tbody>
+				</table>
+				</div>
+			</div>
+	
+		</div>
+		
+		<div id="map-title"><h3>Come Dine With Us</h3></div>
+		
+				<div id="map"></div>			
+			
+
+			<div id="reviews">
+				<h3>Customer Reviews</h3>
+				<div id="jerry">
+					<img src="http://circuits-assets.generalassemb.ly/prod/asset/5474/jerry.jpg">
+				</div>
+				<div id="comments">
+					<p>
+						&#147Big lettuce, big carrots, tomatoes like volleyballs.&#148 
+						&#150 Jerry Seinfeld, on The BIG Salad
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<a href="https://www.facebook.com/TomsDiner.original/" target="_blank">
+				<i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+			</a>
+
+			<a href="https://www.instagram.com/explore/locations/216013022/toms-restaurant/" target="_blank">
+				<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+			</a>
+
+			<a href="https://twitter.com/tomsrestaurant1?lang=en" target="_blank">
+				<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+			</a>
+
+			<p>&copy 2017 Monk's Cafe, All Rights Reserved.</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+		<!-- google maps -->
+      	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDbt1M_Y1NT5NIZ27O1y0L-PXT5-bEIjs" async defer></script>
+      	</div>
+	</body>
+</html>
